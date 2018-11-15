@@ -1,10 +1,10 @@
 # main creds for AWS connection
 variable "aws_access_key_id" {
-  description = "AKIAJEUOSV2RV2Z3JVHA"
+  description = "AWS access key"
 }
 
 variable "aws_secret_access_key" {
-  description = "J594bY70ZAALmlpdZijQaKVGkW2jzsO7ygd+aPJ8"
+  description = "AWS secret access key"
 }
 
 variable "ecs_cluster" {
