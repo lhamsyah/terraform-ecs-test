@@ -1,10 +1,10 @@
 # main creds for AWS connection
 variable "aws_access_key_id" {
-  description = "AWS access key"
+  description = "AKIAJEUOSV2RV2Z3JVHA"
 }
 
 variable "aws_secret_access_key" {
-  description = "AWS secret access key"
+  description = "J594bY70ZAALmlpdZijQaKVGkW2jzsO7ygd+aPJ8"
 }
 
 variable "ecs_cluster" {
@@ -12,17 +12,17 @@ variable "ecs_cluster" {
 }
 
 variable "ecs_key_pair_name" {
-  description = "EC2 instance key pair name"
+  description = "peserta-devops"
 }
 
 variable "region" {
-  description = "AWS region"
+  description = "us-east-2"
 }
 
 variable "availability_zone" {
   description = "availability zone used for the demo, based on region"
   default = {
-    us-east-1 = "us-east-1"
+    us-east-2 = "us-east-2"
   }
 }
 
@@ -33,27 +33,27 @@ variable "test_vpc" {
 }
 
 variable "test_network_cidr" {
-  description = "IP addressing for Test Network"
+  description = "172.31.0.0"
 }
 
 variable "test_public_01_cidr" {
-  description = "Public 0.0 CIDR for externally accessible subnet"
+  description = "172.31.64.0"
 }
 
 variable "test_public_02_cidr" {
-  description = "Public 0.0 CIDR for externally accessible subnet"
+  description = "172.31.48.0"
 }
 
 ########################### Autoscale Config ################################
 
 variable "max_instance_size" {
-  description = "Maximum number of instances in the cluster"
+  description = "2"
 }
 
 variable "min_instance_size" {
-  description = "Minimum number of instances in the cluster"
+  description = "1"
 }
 
 variable "desired_capacity" {
-  description = "Desired number of instances in the cluster"
+  description = "1"
 }
